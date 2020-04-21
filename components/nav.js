@@ -1,13 +1,11 @@
 import React from 'react';
 import NavLogo from './NavLogo';
-import SignUp from './SignUp';
-import SocialLinks from './SocialLinks';
+import Header from './Header';
 
 const Nav = () => (
   <nav className="flex h-16">
     <NavLogo />
-    <SignUp />
-    <SocialLinks />
+    <Header />
   </nav>
 );
 
