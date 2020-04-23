@@ -1,13 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
-import Nav from '../components/Nav';
+import Header from '../components/Header';
+import SideNav from '../components/SideNav';
+import Articles from '../components/Articles';
 
 const Home = () => (
-  <div>
+  <div className="flex">
     <Head>
       <title>Here Now Body</title>
     </Head>
-    <Nav />
+    <SideNav />
+    <div className="block w-full">
+      <Header />
+      <Articles />
+    </div>
   </div>
 );
 
