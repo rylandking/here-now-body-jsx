@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
-import SideNav from '../components/SideNav';
+import Categories from '../components/Categories';
 import Articles from '../components/Articles';
 
 const Home = () => (
-  <div className="flex">
+  <Fragment>
     <Head>
       <title>Here Now Body</title>
     </Head>
-    <SideNav />
     <div className="block w-full">
       <Header />
-      <Articles />
+      <div className="flex">
+        <div className="w-1/4 lg:w-56 items-stretch border-r hidden lg:block">
+          <Categories />
+        </div>
+        <div className="w-full items-stretch">
+          <Articles />
+        </div>
+      </div>
     </div>
-  </div>
+  </Fragment>
 );
 
 export default Home;
