@@ -9,15 +9,12 @@ const Home = () => (
     <Head>
       <title>Here Now Body</title>
     </Head>
-    <div className="block w-full">
+
+    <div className="h-screen block bg-pink-400">
       <Header />
-      <div className="flex">
-        <div className="w-1/4 lg:w-56 items-stretch border-r hidden lg:block">
-          <Categories />
-        </div>
-        <div className="w-full items-stretch">
-          <Articles />
-        </div>
+      <div className="flex" style={{ height: 'calc(100% - 65px)' }}>
+        <Categories />
+        <Articles />
       </div>
     </div>
   </Fragment>
