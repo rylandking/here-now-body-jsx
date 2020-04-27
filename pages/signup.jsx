@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
 import Router from 'next/router';
 import { useUser } from '../lib/hooks';
 
@@ -53,7 +52,7 @@ const SignupPage = () => {
                 name="name"
                 type="text"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border-t border-r border-l border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                 placeholder="Your name"
               />
             </div>
@@ -82,7 +81,6 @@ const SignupPage = () => {
               />
             </div>
           </div>
-
           <div className="mt-6">
             <button
               type="submit"
@@ -110,38 +108,6 @@ const SignupPage = () => {
         </form>
       </div>
     </div>
-
-    // <>
-    //   <Head>
-    //     <title>Sign up</title>
-    //   </Head>
-    //   <div>
-    //     <h2>Sign up</h2>
-    //     <form onSubmit={handleSubmit}>
-    //       {errorMsg ? <p style={{ color: 'red' }}>{errorMsg}</p> : null}
-    //       <label htmlFor="name">
-    //         <input id="name" name="name" type="text" placeholder="Your name" />
-    //       </label>
-    //       <label htmlFor="email">
-    //         <input
-    //           id="email"
-    //           name="email"
-    //           type="email"
-    //           placeholder="Email address"
-    //         />
-    //       </label>
-    //       <label htmlFor="password">
-    //         <input
-    //           id="password"
-    //           name="password"
-    //           type="password"
-    //           placeholder="Create a password"
-    //         />
-    //       </label>
-    //       <button type="submit">Sign up</button>
-    //     </form>
-    //   </div>
-    // </>
   );
 };
 
