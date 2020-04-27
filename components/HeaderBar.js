@@ -29,7 +29,7 @@ const Header = () => (
 
       <div className="w-full lg:w-1/4 flex justify-end flex-shrink-0 text-sm font-semibold pr-3 flex items-center">
         <div className="text-sm font-semibold mr-3 lg:hidden">GET NEW TIPS</div>
-        <Link href="https://www.instagram.com/herenowbody/" target="_blank">
+        <Link href="" target="_blank">
           <a className="mr-2 lg:mr-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,10 +41,7 @@ const Header = () => (
             </svg>
           </a>
         </Link>
-        <Link
-          href="https://www.youtube.com/channel/UChwEaaH7HLZ72HJH6Lkql_A"
-          target="_blank"
-        >
+        <Link href="" target="_blank">
           <a className="mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
