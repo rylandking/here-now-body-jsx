@@ -11,7 +11,7 @@ const LoginPage = () => {
 
   useEffect(() => {
     // redirect to home if user is authenticated
-    if (user) router.replace('/');
+    if (user) router.replace('/admin');
   }, [user]);
 
   async function onSubmit(e) {
