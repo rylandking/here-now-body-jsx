@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useUser } from '../lib/hooks';
 
@@ -29,14 +28,14 @@ const LoginPage = () => {
       const userObj = await res.json();
       mutate(userObj);
     } else {
-      setErrorMsg('Incorrect email or password.');
+      setErrorMsg('Incorrect email or password');
     }
   }
 
   return (
     <Fragment>
       <Head>
-        <title>Sign in</title>
+        <title>Log in</title>
       </Head>
       <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full">
