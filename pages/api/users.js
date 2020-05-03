@@ -28,10 +28,14 @@ handler.post(async (req, res) => {
       return;
     }
     const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Send user to DB
     const user = await req.db
       .collection('users')
-      .insertOne({ email, password: hashedPassword, name })
+      .insertOne({ email, password: hashedPassword, name, role: 'customer' })
       .then(({ ops }) => ops[0]);
+
+    // Log user in using passport's req.logIn
     req.logIn(user, (err) => {
       // if (err) throw err; // This causes an err no matter what bc you can't 'throw' inside an async function
       // when we finally log in, return the (filtered) user object
