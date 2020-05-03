@@ -7,6 +7,7 @@ const SignupPage = () => {
   const [errorMsg, setErrorMsg] = useState('');
 
   // call whenever user changes (ex. right after signing up successfully)
+  // useEffect is called each time the state changes AFTER the component is rendered
   useEffect(() => {
     // redirect to home if user is authenticated
     if (user) Router.replace('/admin');
@@ -26,7 +27,7 @@ const SignupPage = () => {
     });
     if (res.status === 201) {
       const userObj = await res.json();
-      // writing our user object to the state
+      // writes our user object to the state
       mutate(userObj);
     } else {
       setErrorMsg(await res.text());

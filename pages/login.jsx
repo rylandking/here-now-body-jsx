@@ -9,8 +9,14 @@ const LoginPage = () => {
   const [user, { mutate }] = useUser();
 
   useEffect(() => {
-    // redirect to home if user is authenticated
-    if (user) router.replace('/admin');
+    // redirect to admin if user is authenticated + role: admin, else redict
+    if (user) {
+      if (user.role === 'admin') {
+        router.replace('/admin');
+      } else {
+        router.replace('/');
+      }
+    }
   }, [user]);
 
   async function handleSubmit(e) {
@@ -100,36 +106,6 @@ const LoginPage = () => {
         </div>
       </div>
     </Fragment>
-
-    // <>
-    //   <Head>
-    //     <title>Sign in</title>
-    //   </Head>
-    //   <h2>Sign in</h2>
-    //   <form onSubmit={onSubmit}>
-    //     {errorMsg ? <p style={{ color: 'red' }}>{errorMsg}</p> : null}
-    //     <label htmlFor="email">
-    //       <input
-    //         id="email"
-    //         type="email"
-    //         name="email"
-    //         placeholder="Email address"
-    //       />
-    //     </label>
-    //     <label htmlFor="password">
-    //       <input
-    //         id="password"
-    //         type="password"
-    //         name="password"
-    //         placeholder="Password"
-    //       />
-    //     </label>
-    //     <button type="submit">Sign in</button>
-    //     <Link href="/forgetpassword">
-    //       <a>Forget password</a>
-    //     </Link>
-    //   </form>
-    // </>
   );
 };
 
