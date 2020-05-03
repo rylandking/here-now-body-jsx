@@ -7,7 +7,7 @@ const Logout = () => {
   useEffect(() => {
     // redirect to home if user is authenticated
     if (user === null) Router.replace('/');
-  });
+  }, []);
 
   const [user, { mutate }] = useUser();
 
