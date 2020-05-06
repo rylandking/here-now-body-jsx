@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <Fragment>
       <div className="flex w-full border-b items-center justify-between">
-        <div className="flex-shrink-0 hidden lg:flex">
-          <div className="bg-gray-200 text-gray-400 rounded-l-lg rounded-r-none py-3 pl-3 pr-0 mr-0 ml-4">
+        <div className="flex-shrink-0 hidden md:flex">
+          <div className="bg-gray-200 text-gray-400 rounded-l-lg rounded-r-none py-3 pl-3 pr-0 mr-0 ml-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -28,11 +28,11 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="w-full lg:w-1/4 flex justify-end flex-shrink-0 text-sm font-semibold pr-3 flex items-center">
-          <div className="text-sm font-semibold mr-3 lg:hidden">
+        <div className="w-full md:w-1/4 flex justify-end flex-shrink-0 text-sm font-semibold pr-3 flex items-center">
+          <div className="text-sm font-semibold mr-3 md:hidden">
             GET NEW TIPS
           </div>
-          <a className="mr-2 lg:mr-3">
+          <a className="mr-2 md:mr-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"

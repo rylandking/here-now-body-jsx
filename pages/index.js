@@ -10,7 +10,7 @@ const Home = () => (
       <title>Here Now Body</title>
     </Head>
 
-    <div className="h-screen block bg-pink-400">
+    <div className="h-screen block">
       <Header />
       <div className="flex" style={{ height: 'calc(100% - 65px)' }}>
         <Categories />

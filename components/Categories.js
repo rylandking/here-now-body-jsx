@@ -2,10 +2,10 @@ import React from 'react';
 
 const Categories = () => {
   return (
-    <div className="w-56 border-r hidden lg:block bg-blue-100">
+    <div className="w-56 border-r hidden md:block">
       <div className="block">
         <div className="flex w-full h-24">
-          <div className="flex justify-center w-1/2 text-xs border h-full font-medium cursor-pointer">
+          <div className="flex justify-center w-1/2 text-xs h-full font-medium cursor-pointer hover:bg-gray-400">
             <div className="block self-center">
               <div className="flex justify-center mb-1">
                 <svg
@@ -20,7 +20,7 @@ const Categories = () => {
               <span>Back Pain</span>
             </div>
           </div>
-          <div className="flex justify-center w-1/2 text-xs border h-full font-medium cursor-pointer">
+          <div className="flex justify-center w-1/2 text-xs h-full font-medium cursor-pointer hover:bg-gray-400">
             <div className="block self-center">
               <div className="flex justify-center mb-1">
                 <svg
@@ -35,12 +35,6 @@ const Categories = () => {
               <span>Neck Pain</span>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="block">
-        <div className="flex w-full bg-pink-100">
-          <div className="w-1/2 border">Category_3</div>
-          <div className="w-1/2 border">Category_4</div>
         </div>
       </div>
     </div>
