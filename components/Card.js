@@ -10,7 +10,7 @@ const Card = () => {
       style={{ backgroundImage: 'url(' + background + ')' }}
     >
       <div className="mb-8">
-        <div className="text-white font-bold text-lg mb-2">
+        <div className="text-white font-bold text-lg tracking-wide mb-2">
           Yoga For Low Back Pain
         </div>
       </div>

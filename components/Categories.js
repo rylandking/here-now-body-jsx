@@ -5,7 +5,7 @@ const Categories = () => {
     <div className="w-56 border-r hidden md:block">
       <div className="block">
         <div className="flex w-full h-24">
-          <div className="flex justify-center w-1/2 text-xs h-full font-medium cursor-pointer hover:bg-gray-400">
+          <div className="flex justify-center w-1/2 text-xs h-full font-medium cursor-pointer hover:bg-purple-100">
             <div className="block self-center">
               <div className="flex justify-center mb-1">
                 <svg
@@ -20,7 +20,7 @@ const Categories = () => {
               <span>Back Pain</span>
             </div>
           </div>
-          <div className="flex justify-center w-1/2 text-xs h-full font-medium cursor-pointer hover:bg-gray-400">
+          <div className="flex justify-center w-1/2 text-xs h-full font-medium cursor-pointer hover:bg-purple-100">
             <div className="block self-center">
               <div className="flex justify-center mb-1">
                 <svg
