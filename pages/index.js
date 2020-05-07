@@ -2,7 +2,8 @@ import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Categories from '../components/Categories';
-import Articles from '../components/Articles';
+import Cards from '../components/Cards';
+import TaraTab from '../components/TaraTab';
 
 const Home = () => (
   <Fragment>
@@ -14,8 +15,9 @@ const Home = () => (
       <Header />
       <div className="flex" style={{ height: 'calc(100% - 65px)' }}>
         <Categories />
-        <Articles />
+        <Cards />
       </div>
+      <TaraTab />
     </div>
   </Fragment>
 );

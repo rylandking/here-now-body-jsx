@@ -1,8 +1,14 @@
 import React from 'react';
 
-const Article = () => {
+const Card = () => {
+  let background =
+    'https://images.unsplash.com/photo-1524863479829-916d8e77f114?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&h=260&fit=max&ixid=eyJhcHBfaWQiOjF9';
+
   return (
-    <div className="h-56 col-span-1 bg-gray-600 rounded-lg pt-4 pb-2 px-4 flex flex-col justify-between leading-normal">
+    <div
+      className="h-56 col-span-1 rounded-lg pt-4 pb-2 px-4 flex flex-col justify-between leading-normal cursor-pointer"
+      style={{ backgroundImage: 'url(' + background + ')' }}
+    >
       <div className="mb-8">
         <div className="text-white font-bold text-lg mb-2">
           Yoga For Low Back Pain
@@ -38,4 +44,4 @@ const Article = () => {
   );
 };
 
-export default Article;
+export default Card;

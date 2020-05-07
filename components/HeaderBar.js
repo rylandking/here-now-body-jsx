@@ -23,14 +23,14 @@ const Header = () => {
               placeholder="Get new case study every week"
             />
           </div>
-          <button className="bg-gray-500 hover:bg-gray-700 w-30 text-white text-xs font-medium ml-2 py-3 px-4 rounded leading-7">
+          <button className="bg-gray-500 hover:bg-gray-700 w-30 text-white text-xs font-medium ml-2 py-3 px-4 rounded leading-5">
             Stay Updated
           </button>
         </div>
 
         <div className="w-full md:w-1/4 flex justify-end flex-shrink-0 text-sm font-semibold pr-3 flex items-center">
           <div className="text-sm font-semibold mr-3 md:hidden">
-            GET NEW TIPS
+            VIRTUAL STUDIO
           </div>
           <a className="mr-2 md:mr-3">
             <svg
