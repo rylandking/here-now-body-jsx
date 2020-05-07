@@ -6,7 +6,7 @@ const Header = () => {
     <Fragment>
       <div className="flex w-full border-b items-center justify-between">
         <div className="flex-shrink-0 hidden md:flex">
-          <div className="bg-gray-200 text-gray-400 rounded-l-lg rounded-r-none h-10 flex items-center pl-3 pr-0 mr-0 ml-5">
+          <div className="bg-gray-200 text-gray-400 rounded-l-lg rounded-r-none h-12 flex items-center pl-3 pr-0 mr-0 ml-5">
             <span className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,12 +21,12 @@ const Header = () => {
           </div>
           <div className="w-64">
             <input
-              className="bg-gray-200 placeholder-gray-600 text-sm font-light focus:outline-none rounded-l-none rounded-r-lg h-10 pr-0 pl-3 block w-full appearance-none leading-normal"
+              className="bg-gray-200 placeholder-gray-600 text-sm font-light focus:outline-none rounded-l-none rounded-r-lg h-12 pr-0 pl-3 block w-full appearance-none leading-normal"
               type="email"
               placeholder="Get one new case study every week"
             />
           </div>
-          <button className="bg-purple-600 hover:bg-purple-500 w-30 text-white text-xs font-medium ml-2 py-3 px-4 rounded leading-5">
+          <button className="bg-purple-600 hover:bg-purple-500 w-30 text-white text-xs font-medium ml-2 h-12 px-4 rounded leading-5">
             Stay Updated
           </button>
         </div>

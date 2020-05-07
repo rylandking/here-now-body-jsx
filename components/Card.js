@@ -35,7 +35,7 @@ const Card = () => {
           </p>
         </div>
         <div className="text-sm text-center justify-center">
-          <div class="inline-flex items-center justify-center w-32 py-1 rounded-full text-xs font-normal leading-5 bg-yellow-200 text-gray-700">
+          <div className="inline-flex items-center justify-center w-32 py-1 rounded-full text-xs font-normal leading-5 bg-yellow-200 text-gray-700">
             <span>Back Pain</span>
           </div>
         </div>
