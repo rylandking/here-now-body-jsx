@@ -5,7 +5,7 @@ const HeaderLeft = () => (
   <Fragment>
     <Link href="/">
       <div className="w-1/4 md:w-56 flex pl-4 items-center flex-shrink-0 border-b md:border-r md:border-b-0 cursor-pointer">
-        <div class="rounded-full h-10 w-10 flex items-center justify-center bg-purple-600">
+        <div className="rounded-full h-10 w-10 flex items-center justify-center bg-purple-600">
           <svg
             width="24"
             height="24"

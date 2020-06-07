@@ -2,7 +2,7 @@ import React from 'react';
 
 const Categories = () => {
   return (
-    <div className="w-56 border-r hidden md:block">
+    <div className="w-100 md:w-56 border-r hidden md:block">
       <div className="block">
         <div className="flex w-full h-24">
           <div className="flex justify-center w-1/2 text-xs h-full font-medium cursor-pointer hover:bg-purple-100">

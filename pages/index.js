@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Categories from '../components/Categories';
 import Cards from '../components/Cards';
 import TaraTab from '../components/TaraTab';
-import ShowCategories from '../components/ShowCategories';
+import CategoriesControl from '../components/CategoriesControl';
 
 const Home = () => (
   <Fragment>
@@ -18,7 +18,7 @@ const Home = () => (
         <Categories />
         <Cards />
       </div>
-      <ShowCategories />
+      <CategoriesControl />
       <TaraTab />
     </div>
   </Fragment>
