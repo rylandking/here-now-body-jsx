@@ -20,7 +20,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "swr": "^0.2.0",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
