@@ -11,7 +11,7 @@
     "bcryptjs": "^2.4.3",
     "connect-mongo": "^3.2.0",
     "mongoose": "^5.9.10",
-    "next": "^9.3.2",
+    "next": "^13.0.2",
     "next-connect": "^0.6.5",
     "next-session": "^3.1.0",
     "passport": "^0.4.1",
